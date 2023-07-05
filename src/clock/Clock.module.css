@@ -1,0 +1,127 @@
+.wrap{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.bodyClock{
+    width: 500px;
+    height: 500px;
+    background-color: #ff00a0;
+    border-radius: 100%;
+    position: relative;
+    --rotation: 0;
+    transform: rotate(var(--rotation));
+}
+
+.point {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: chartreuse;
+    position: absolute;
+    top: 240px;
+    left: 240px;
+}
+
+
+.numberClock_1{
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 40px;
+    right: 130px;
+
+}
+
+.numberClock_2{
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 125px;
+    right: 45px;
+}
+
+.numberClock_3{
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 235px;
+    right: 10px;
+}
+
+.numberClock_4{
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 345px;
+    right: 45px;
+}
+
+.numberClock_5{
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 430px;
+    right: 130px;
+}
+.numberClock_6{
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 10px;
+    left: 240px;
+}
+
+.numberClock_7{
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 430px;
+    left: 130px;
+}
+
+.numberClock_8{
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 345px;
+    left: 50px
+}
+
+.numberClock_9{
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 235px;
+    left: 10px
+}
+
+.numberClock_10{
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 125px;
+    left: 45px
+}
+.numberClock_11{
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 40px;
+    left: 130px
+}
+.numberClock_12{
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: 235px
+}
