@@ -1,17 +1,31 @@
 import React from 'react';
 import s from './Clock.module.css'
 
+
+export enum colorStyleWatch {
+    MoonEclipse = "moonEclipse",
+    Sunrise =  "sunrise",
+    Tokio = "tokio"
+}
+
+
 type PropsType = {
     hour: number
     minute: number
     second: number
+    styleWatch?: colorStyleWatch
 }
 
 export const Clock: React.FC<PropsType> = ({
                                                hour,
                                                minute,
                                                second,
+                                               styleWatch= colorStyleWatch.Sunrise
                                            }) => {
+
+
+
+
 
     const styleLineSecond = { transform: `rotate(${second}deg)`};
     const styleLineMinute = {transform: `rotate(${minute}deg)`};
@@ -19,10 +33,10 @@ export const Clock: React.FC<PropsType> = ({
 
     return (
         <div className={s.wrap}>
-            <div className={s.bodyClock}>
+            <div className={`${s[styleWatch]}`}>
                 <div className={s.point}></div>
                 <div className={`${s.numberClock_1} ${s.number_className}`}>1</div>
-                <div className={`${s.numberClock_2} ${s.number_className}`}> 2</div>
+                <div className={`${s.numberClock_2} ${s.number_className}`}>2</div>
                 <div className={`${s.numberClock_3} ${s.number_className}`}>3</div>
                 <div className={`${s.numberClock_4} ${s.number_className}`}>4</div>
                 <div className={`${s.numberClock_5} ${s.number_className}`}>5</div>

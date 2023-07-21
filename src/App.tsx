@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import './App.module.css';
 import s from './App.module.css'
-import {Clock} from "./clock/Clock";
+import {Clock} from "./clock/classicWatch/Clock";
 
 function App() {
 
