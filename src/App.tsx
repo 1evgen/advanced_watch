@@ -1,11 +1,17 @@
 import React, {useEffect, useState} from 'react';
 import './App.module.css';
 import s from './App.module.css'
-import {Clock} from "./clock/classicWatch/Clock";
+import {Clock} from "./clock/Watch/Clock";
+
 
 function App() {
-
     const [time, setTime] = useState(new Date())
+    const [toggle, setToggle] = useState(true)
+
+    const switchWatch = ()=> {
+        setToggle(!toggle)
+        console.log(toggle)
+    }
 
     useEffect(() => {
         let IntervalID = setInterval(() => {
@@ -13,18 +19,24 @@ function App() {
             return () => {
                 clearInterval(IntervalID)
             }
-        }, 1)
+        }, 1000)
     }, [])
 
-    const second = time.getSeconds() * 6 + time.getMilliseconds() / 166.67;
-    let minute = time.getMinutes() * 6;
-    let hour = (time.getHours() % 12) * 30 + Math.round(minute / 12)
+
+     let hour = time.getHours().toString().padStart(2, '0')
+     let minute = time.getMinutes().toString().padStart(2, '0')
+     let second = time.getSeconds().toString().padStart(2, '0')
+     let millisecond = time.getMilliseconds()
+
 
     return (
         <div className={s.App}>
             <Clock hour={hour}
                    minute={minute}
                    second={second}
+                   millisecond={millisecond}
+                   switchWatch={switchWatch}
+                   toggle={toggle}
             />
         </div>
     );

@@ -1,35 +1,32 @@
-import React from 'react';
-import s from './Clock.module.css'
+import s from "./ClassicWatch.module.css";
+import React from "react";
+import {colorStyleWatch} from "../Watch/Clock";
 
 
-export enum colorStyleWatch {
-    MoonEclipse = "moonEclipse",
-    Sunrise =  "sunrise",
-    Tokio = "tokio"
-}
-
-
-type PropsType = {
-    hour: number
-    minute: number
-    second: number
+type PropsTypeWatch = {
+    hour: number | string
+    minute: number | string
+    second: number | string
+    millisecond: number
     styleWatch?: colorStyleWatch
+
 }
 
-export const Clock: React.FC<PropsType> = ({
-                                               hour,
-                                               minute,
-                                               second,
-                                               styleWatch= colorStyleWatch.Sunrise
-                                           }) => {
+export const ClassicWatch: React.FC<PropsTypeWatch> = ({hour,
+                                                        minute,
+                                                        second,
+                                                        millisecond,
+                                                        styleWatch= colorStyleWatch.Sunrise }) => {
 
 
+    const calculatedSecond = +second * 6 + millisecond / 166.67;
+    let calculatedMinute = +minute * 6;
+    let calculatedHour = (+hour % 12) * 30 + Math.round(calculatedMinute / 12)
 
 
-
-    const styleLineSecond = { transform: `rotate(${second}deg)`};
-    const styleLineMinute = {transform: `rotate(${minute}deg)`};
-    const styleLineHour = {transform: `rotate(${hour}deg)`};
+    const styleLineSecond = { transform: `rotate(${calculatedSecond}deg)`};
+    const styleLineMinute = {transform: `rotate(${calculatedMinute}deg)`};
+    const styleLineHour = {transform: `rotate(${calculatedHour}deg)`};
 
     return (
         <div className={s.wrap}>
@@ -49,7 +46,7 @@ export const Clock: React.FC<PropsType> = ({
                 <div className={`${s.numberClock_12} ${s.number_className}`}>12</div>
 
                 <div className={s.boxLineHour} style={styleLineHour}>
-                <div className={s.lineHour}></div>
+                    <div className={ s.lineHour}></div>
                 </div>
 
                 <div className={s.boxLineMinute} style={styleLineMinute}>
@@ -64,5 +61,4 @@ export const Clock: React.FC<PropsType> = ({
 
         </div>
     );
-};
-
+}
