@@ -2,6 +2,7 @@ import React from 'react';
 import s from "../Watch/Clock.module.css"
 import {ClassicWatch} from "../ClassicWatch/ClassicWatch";
 import {ElectronicWatch} from "../ElectronicWatch/ElectronicWatch";
+import {SwitcherClock} from "../Switcher/Switcher";
 
 
 
@@ -22,7 +23,6 @@ export const Clock: React.FC<PropsType> = ({
                                            }) => {
     return (
         <div className={s.wrap}>
-            <div onClick={switchWatch} className={s.toggle}></div>
             {
                 toggle ?
                 <ClassicWatch hour={hour}
@@ -34,6 +34,9 @@ export const Clock: React.FC<PropsType> = ({
                                  minute={minute}
                                  second={second} />
             }
+            <div className={s.switcher}>
+                <SwitcherClock toggle={toggle} switchWatch={switchWatch}/>
+            </div>
         </div>
 
     );

@@ -4,8 +4,15 @@ import {useEffect, useState} from "react";
 
 
 const meta: Meta<typeof ClassicWatch> = {
-    title: 'Clock/model watch',
+    title: 'Clock/classic watch',
     component: ClassicWatch,
+    decorators: [
+        (Story) => (
+            <div style={{ display: "flex", width: "100%", justifyContent: "center" }}>
+                <Story />
+            </div>
+        ),
+    ],
     tags: ['autodocs'],
     parameters: {
         backgrounds: {
@@ -41,7 +48,6 @@ const  WorkingWatch = () => {
 }
 
 export const classicWatch: Story = {
-             render: ()=> <WorkingWatch />
-
+    render: ()=> <WorkingWatch />
 }
 

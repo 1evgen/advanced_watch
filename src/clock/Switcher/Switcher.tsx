@@ -1,14 +1,25 @@
-import {useState} from "react";
+import React, {useState} from "react";
+import {Switch} from "@mui/material";
 
-const SwitcherExample = () =>  {
-    }
+type PropsType = {
+    toggle: boolean
+    switchWatch: ()=> void
+}
+
+
+export const SwitcherClock = (props: PropsType) =>  {
+
     return (
         <div>
-            <Switcher
-                name="my-switcher"
-                onChange={onHandleChange}
-                checked={switcherState}
+            <Switch
+                checked={props.toggle}
+                onChange={props.switchWatch}
+                sx={
+                { transform: "scale(2)",}
+            }
             />
+
+
         </div>
     )
 }
