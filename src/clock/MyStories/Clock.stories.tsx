@@ -1,9 +1,11 @@
-import type {Meta, StoryObj} from '@storybook/react';;
+import type {Meta, StoryObj} from '@storybook/react';
 import {Clock} from "../Watch/Clock";
+import {action} from "@storybook/addon-actions"
+
 
 
 const meta: Meta<typeof Clock> = {
-    title: 'Clock/classic watch',
+    title: 'Clock/model watch',
     component: Clock,
     tags: ['autodocs'],
     parameters: {
@@ -27,5 +29,9 @@ export const scoreboardWatch: Story = {
                 hour: 12,
                 minute: 30,
                 second: "01",
+                switchWatch: action('change type watch'),
+                toggle: false
+
         }
 }
+

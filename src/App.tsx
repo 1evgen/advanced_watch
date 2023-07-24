@@ -8,7 +8,7 @@ function App() {
     const [time, setTime] = useState(new Date())
     const [toggle, setToggle] = useState(true)
 
-    const switchWatch = ()=> {
+    const switchClock = ()=> {
         setToggle(!toggle)
         console.log(toggle)
     }
@@ -26,7 +26,6 @@ function App() {
      let hour = time.getHours().toString().padStart(2, '0')
      let minute = time.getMinutes().toString().padStart(2, '0')
      let second = time.getSeconds().toString().padStart(2, '0')
-     let millisecond = time.getMilliseconds()
 
 
     return (
@@ -34,8 +33,7 @@ function App() {
             <Clock hour={hour}
                    minute={minute}
                    second={second}
-                   millisecond={millisecond}
-                   switchWatch={switchWatch}
+                   switchWatch={switchClock}
                    toggle={toggle}
             />
         </div>

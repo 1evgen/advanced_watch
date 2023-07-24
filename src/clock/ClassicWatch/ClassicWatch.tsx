@@ -1,13 +1,17 @@
 import s from "./ClassicWatch.module.css";
 import React from "react";
-import {colorStyleWatch} from "../Watch/Clock";
+// import {colorStyleWatch} from "../Watch/Clock";
 
+ export enum colorStyleWatch {
+    MoonEclipse = "moonEclipse",
+    Sunrise =  "sunrise",
+    Tokio = "tokio"
+}
 
 type PropsTypeWatch = {
     hour: number | string
     minute: number | string
     second: number | string
-    millisecond: number
     styleWatch?: colorStyleWatch
 
 }
@@ -15,11 +19,10 @@ type PropsTypeWatch = {
 export const ClassicWatch: React.FC<PropsTypeWatch> = ({hour,
                                                         minute,
                                                         second,
-                                                        millisecond,
-                                                        styleWatch= colorStyleWatch.Sunrise }) => {
+                                                        styleWatch= colorStyleWatch.MoonEclipse }) => {
 
 
-    const calculatedSecond = +second * 6 + millisecond / 166.67;
+    const calculatedSecond = +second * 6;
     let calculatedMinute = +minute * 6;
     let calculatedHour = (+hour % 12) * 30 + Math.round(calculatedMinute / 12)
 
