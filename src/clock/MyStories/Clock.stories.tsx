@@ -10,9 +10,9 @@ const meta: Meta<typeof Clock> = {
     tags: ['autodocs'],
     parameters: {
         backgrounds: {
-            default: 'classic',
+            default: 'color default',
             values: [
-                {name: "classic", value: "#120458"}
+                {name: "color default", value: "#120458"}
             ]
         }
     },
@@ -30,7 +30,8 @@ export const scoreboardWatch: Story = {
                 minute: 30,
                 second: "01",
                 switchWatch: action('change type watch'),
-                toggle: false
+                toggle: false,
+
 
         }
 }

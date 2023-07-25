@@ -1,11 +1,11 @@
 import s from "./ClassicWatch.module.css";
 import React from "react";
-// import {colorStyleWatch} from "../Watch/Clock";
+
 
  export enum colorStyleWatch {
     MoonEclipse = "moonEclipse",
     Sunrise =  "sunrise",
-    Tokio = "tokio"
+    FullMoon = "fullMoon"
 }
 
 type PropsTypeWatch = {
@@ -32,6 +32,7 @@ export const ClassicWatch: React.FC<PropsTypeWatch> = ({hour,
     const styleLineHour = {transform: `rotate(${calculatedHour}deg)`};
 
     return (
+
         <div className={s.wrap}>
             <div className={`${s[styleWatch]}`}>
                 <div className={s.point}></div>

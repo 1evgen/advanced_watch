@@ -4,8 +4,6 @@ import {ClassicWatch} from "../ClassicWatch/ClassicWatch";
 import {ElectronicWatch} from "../ElectronicWatch/ElectronicWatch";
 import {SwitcherClock} from "../Switcher/Switcher";
 
-
-
 type PropsType = {
     hour: number | string
     minute: number | string
@@ -21,6 +19,7 @@ export const Clock: React.FC<PropsType> = ({
                                                switchWatch,
                                                toggle,
                                            }) => {
+
     return (
         <div className={s.wrap}>
             {
@@ -28,7 +27,6 @@ export const Clock: React.FC<PropsType> = ({
                 <ClassicWatch hour={hour}
                               minute={minute}
                               second={second} />
-                              // styleWatch={styleWatch} />
                 :
                 <ElectronicWatch hour={hour}
                                  minute={minute}

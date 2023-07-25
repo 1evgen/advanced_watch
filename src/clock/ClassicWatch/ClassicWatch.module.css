@@ -32,7 +32,16 @@
     background-color: #ffca1f;
 }
 
-
+.fullMoon{
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    position: relative;
+    --rotation: 0;
+    transform: rotate(var(--rotation));
+    box-shadow: 10px 0px 50px 10px #a4e1ff, 0  0 25px 25px #a4e4ff;
+    background-color: #e0e8ff;
+}
 
 
 .boxLineHour{

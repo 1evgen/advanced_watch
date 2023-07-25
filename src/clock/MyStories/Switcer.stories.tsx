@@ -8,9 +8,9 @@ const meta: Meta<typeof SwitcherClock> = {
     component: SwitcherClock,
     parameters: {
         backgrounds: {
-            default: 'classic',
+            default: 'color default',
             values: [
-                {name: "classic", value: "#120458"}
+                {name: "color default", value: "#120458"}
             ]
         }
     },
