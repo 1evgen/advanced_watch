@@ -1,5 +1,7 @@
 import React from 'react';
 import s from '../ElectronicWatch/ElectronicWatch.module.css'
+import {MenuItem, Select} from "@mui/material";
+import {colorStyleWatch} from "../ClassicWatch/ClassicWatch";
 
 type PropsType = {
     hour: number | string

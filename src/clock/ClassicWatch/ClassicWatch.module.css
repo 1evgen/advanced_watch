@@ -1,15 +1,4 @@
 
-/*.bodyClock{*/
-/*    width: 500px;*/
-/*    height: 500px;*/
-/*    border-radius: 100%;*/
-/*    position: relative;*/
-/*    --rotation: 0;*/
-/*    transform: rotate(var(--rotation));*/
-/*    box-shadow: 10px 0px 50px 10px #fe75fe, 0  0 25px 25px #7a04eb;*/
-/*    background-color: #120458;*/
-/*}*/
-
 .moonEclipse {
     width: 500px;
     height: 500px;
@@ -160,4 +149,3 @@
     left: 235px
 }
 
-/*\ place for styles's Storybook*/
