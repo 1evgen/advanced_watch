@@ -1,31 +1,25 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import s from '../ElectronicWatch/ElectronicWatch.module.css'
 import moment from 'moment-timezone';
-
-
 
 type PropsType = {
     hour: number | string
     minute: number | string
     second: number | string
-
 }
-
 type TimezoneType = 'New_York' | 'Tokio' | 'London' | 'CurrentTime'
 
 export const ElectronicWatch = (props: PropsType) => {
-
     const [selectedTimezone, setSelectedTimezone] = useState('')
     const [activeTimezone, setActiveTimezone] = useState('CurrentTime')
+
 
     const setTimezone = (nameTime: TimezoneType)=> {
         setSelectedTimezone(nameTime)
         setActiveTimezone(nameTime)
-
     }
+    let electronicWatchTime  = props.hour + ':' +  props.minute + ':' + props.second
 
-
-    let electronicWatchTime  = props.hour + ' ' +  props.minute + ' ' + props.second
 
     switch (selectedTimezone) {
         case "New_York": electronicWatchTime  = moment().tz('America/New_York').format('HH: mm: ss')
@@ -38,8 +32,6 @@ export const ElectronicWatch = (props: PropsType) => {
             break
         default: break
     }
-
-
 
     return (
         <div className={s.wrapperForWatch} >
@@ -56,7 +48,6 @@ export const ElectronicWatch = (props: PropsType) => {
                      onClick={()=> setTimezone('CurrentTime')}>Your Time</div>
             </div>
         </div>
-
         </div>
     );
 };

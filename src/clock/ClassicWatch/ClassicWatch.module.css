@@ -11,8 +11,6 @@
 }
 
 
-
-
 .moonEclipse {
     width: 500px;
     height: 500px;
@@ -52,7 +50,6 @@
     position: absolute;
     top: 103px;
     left: 252px;
-
 }
 
 .lineHour{
@@ -106,13 +103,6 @@
     position: absolute;
     font-family:  'Magneto';
 }
-
-
-
-
-
-
-
 
 /*!*"Bell MT" *!  Magneto*/
 .numberClock_1{
