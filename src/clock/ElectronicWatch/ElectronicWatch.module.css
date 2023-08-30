@@ -13,10 +13,18 @@
     height: 230px;
 
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     margin-top: 100px;
 }
+
+.buttons{
+    display: flex;
+    gap: 20px
+}
+
+
 
 .numbers{
     color: seashell;
@@ -29,3 +37,11 @@
     font-size: 90px;
 }
 
+.button:hover {
+    color: gold;
+    cursor: pointer;
+}
+
+.activeTime{
+    color: gold;
+}

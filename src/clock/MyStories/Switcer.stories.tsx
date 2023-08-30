@@ -1,5 +1,5 @@
 import type {Meta, StoryObj} from '@storybook/react';
-import {SwitcherClock} from "../Switcher/Switcher";
+import {SwitcherClock} from "../CommonComponent/Switcher/Switcher";
 import {action} from "@storybook/addon-actions";
 
 

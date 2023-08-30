@@ -9,6 +9,7 @@ function App() {
     const [time, setTime] = useState(new Date())
     const [toggle, setToggle] = useState(true)
 
+
     const switchClock = ()=> {
         setToggle(!toggle)
         console.log(toggle)
@@ -22,6 +23,7 @@ function App() {
             }
         }, 1000)
     }, [])
+
 
 
      let hour = time.getHours().toString().padStart(2, '0')

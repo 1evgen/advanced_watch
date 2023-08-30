@@ -2,7 +2,7 @@ import React from 'react';
 import s from "../Watch/Clock.module.css"
 import {ClassicWatch} from "../ClassicWatch/ClassicWatch";
 import {ElectronicWatch} from "../ElectronicWatch/ElectronicWatch";
-import {SwitcherClock} from "../Switcher/Switcher";
+import {SwitcherClock} from "../CommonComponent/Switcher/Switcher";
 
 type PropsType = {
     hour: number | string

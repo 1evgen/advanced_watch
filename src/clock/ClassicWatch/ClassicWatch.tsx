@@ -1,5 +1,5 @@
 import s from "./ClassicWatch.module.css";
-import React, {ChangeEvent, useState} from "react";
+import React, {useState} from "react";
 import {MenuItem, Select, SelectChangeEvent} from "@mui/material";
 
 
@@ -8,6 +8,9 @@ import {MenuItem, Select, SelectChangeEvent} from "@mui/material";
     Sunrise =  "sunrise",
     FullMoon = "fullMoon"
 }
+
+
+
 
 type PropsTypeWatch = {
     hour: number | string
@@ -32,18 +35,20 @@ export const ClassicWatch: React.FC<PropsTypeWatch> = ({hour,
     const styleLineMinute = {transform: `rotate(${calculatedMinute}deg)`};
     const styleLineHour = {transform: `rotate(${calculatedHour}deg)`};
 
-    const [selectedStyle, setSelectedStyle] = useState<colorStyleWatch>(
-        styleWatch
-    );
+    const [selectedStyle, setSelectedStyle] = useState<colorStyleWatch>(styleWatch);
 
     const handleChangeStyle = (event: SelectChangeEvent) => {
         setSelectedStyle(event.target.value as colorStyleWatch);
     };
 
+    let styleForSelect = {
+        background: '#5d94ff'
+    }
+
     return (
         <div className={s.wrap}>
             <div className={s.select}>
-                <Select className={s.select} value={selectedStyle} onChange={handleChangeStyle}>
+                <Select  style={styleForSelect}  className={s.select} value={selectedStyle} onChange={handleChangeStyle}>
                     <MenuItem value={colorStyleWatch.MoonEclipse}>Moon Eclipse</MenuItem>
                     <MenuItem value={colorStyleWatch.Sunrise}>Sunrise</MenuItem>
                     <MenuItem value={colorStyleWatch.FullMoon}>Full Moon</MenuItem>

@@ -32,7 +32,6 @@ export const scoreboardWatch: Story = {
                 switchWatch: action('change type watch'),
                 toggle: false,
 
-
         }
 }
 

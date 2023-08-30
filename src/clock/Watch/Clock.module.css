@@ -19,3 +19,8 @@
 }
 
 
+.select{
+    position: absolute;
+    color: #5d94ff;
+    right: 500px;
+}

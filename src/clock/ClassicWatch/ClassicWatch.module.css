@@ -1,3 +1,17 @@
+.wrap{
+
+}
+
+.select {
+    position: fixed;
+    top: 20px; /* Расстояние сверху */
+    right: 20px; /* Расстояние справа */
+    color: #5d94ff;
+    z-index: 100; /* Значение z-index для признака, чтобы селектор отображался поверх остальных элементов */
+}
+
+
+
 
 .moonEclipse {
     width: 500px;
@@ -92,6 +106,12 @@
     position: absolute;
     font-family:  'Magneto';
 }
+
+
+
+
+
+
 
 
 /*!*"Bell MT" *!  Magneto*/
