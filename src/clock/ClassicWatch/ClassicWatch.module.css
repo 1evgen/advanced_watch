@@ -10,23 +10,12 @@
     z-index: 100; /* Значение z-index для признака, чтобы селектор отображался поверх остальных элементов */
 }
 
-
 .moonEclipse {
-    width: 500px;
-    height: 500px;
-    border-radius: 100%;
-    position: relative;
-    --rotation: 0;
-    transform: rotate(var(--rotation));
     box-shadow: 10px 0px 50px 10px #fe75fe, 0  0 25px 25px #7a04eb;
     background-color: #120458;
 }
 
 .sunrise{
-    width: 500px;
-    height: 500px;
-    border-radius: 100%;
-    position: relative;
     --rotation: 0;
     transform: rotate(var(--rotation));
     box-shadow: 10px 0px 50px 10px #fad8d0, 0  0 25px 25px #f64c0a;
@@ -34,16 +23,16 @@
 }
 
 .fullMoon{
-    width: 500px;
-    height: 500px;
-    border-radius: 100%;
-    position: relative;
-    --rotation: 0;
-    transform: rotate(var(--rotation));
     box-shadow: 10px 0px 50px 10px #a4e1ff, 0  0 25px 25px #a4e4ff;
     background-color: #e0e8ff;
 }
 
+.commonStyles {
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    position: relative;
+}
 
 .boxLineHour{
     height: 300px;
@@ -72,13 +61,11 @@
     border-radius: 90px;
 }
 
-
 .boxLineSecond{
     height: 210px;
     position: absolute;
     top: 150px;
     left: 255px;
-
 }
 .lineSecond{
     width: 2px;
@@ -96,6 +83,8 @@
     left: 245px;
 }
 
+
+
 .number_className {
     color: #fe75fe;
     font-size: 30px;
@@ -104,20 +93,20 @@
     font-family:  'Magneto';
 }
 
+
 /*!*"Bell MT" *!  Magneto*/
 .numberClock_1{
     top: 40px;
     right: 130px;
-
 }
 .numberClock_2{
     top: 125px;
     right: 45px;
 }
-
 .numberClock_3{
-    top: 235px;
+    top: 50%;
     right: 10px;
+    transform: translateY(-50%);
 }
 .numberClock_4{
     top: 345px;
@@ -128,24 +117,23 @@
     right: 130px;
 }
 .numberClock_6{
-    bottom: 10px;
-    left: 240px;
+    transform: translateX(-50%);
+    bottom: 5px;
+    left:  51%;
 }
 .numberClock_7{
     top: 430px;
     left: 130px;
 }
-
 .numberClock_8{
     top: 345px;
     left: 50px
 }
-
 .numberClock_9{
-    top: 235px;
-    left: 10px
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
 }
-
 .numberClock_10{
     top: 125px;
     left: 45px
@@ -155,7 +143,97 @@
     left: 130px
 }
 .numberClock_12{
-    top: 10px;
-    left: 235px
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
+ /*576*/
+@media screen and (max-width: 780px){
+    .commonStyles {
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+        position: relative;
+    }
+    .number_className {
+        color: #fe75fe;
+        font-size: 25px;
+    }
+
+    .numberClock_1 {
+        top: 22px;
+        right: 75px;
+    }
+    .numberClock_2{
+        top: 70px;
+        right: 25px;
+    }
+    .numberClock_4{
+        top: 200px;
+        right: 25px;
+    }
+    .numberClock_5{
+        top: 245px;
+        right: 70px;
+    }
+    .numberClock_7{
+        top: 250px;
+        left: 75px;
+    }
+    .numberClock_8{
+        top: 200px;
+        left: 30px;
+    }
+    .numberClock_10{
+        top: 70px;
+        left: 25px;
+    }
+    .numberClock_11{
+        top: 20px;
+        left: 75px;
+    }
+    .containerLines{
+        position: absolute;
+        top: -105px;
+        right: 400px
+    }
+
+    .boxLineHour{
+        height: 290px;
+        position: absolute;
+        top: 130px;
+        left: 270px;
+    }
+    .lineHour{
+        width: 6px;
+        height: 120px;
+        background-color:  #ff00a0;;
+        border-radius: 90px;
+
+    }
+
+    .boxLineMinute {
+        height: 250px;
+        position: absolute;
+        top: 130px;
+        left: 255px;
+    }
+
+    .lineMinute {
+        width: 3px;
+        height: 130px;
+        background-color:  #ff00a0;;
+        border-radius: 90px;
+    }
+
+    .point {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #ff00a0;
+        position: absolute;
+        top: 245px;
+        left: 245px;
+    }
+}

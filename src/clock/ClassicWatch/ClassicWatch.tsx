@@ -24,8 +24,8 @@ export const ClassicWatch: React.FC<PropsTypeWatch> = ({hour,
     const calculatedSecond = +second * 6;
     let calculatedMinute = +minute * 6;
     let calculatedHour = (+hour % 12) * 30 + Math.round(calculatedMinute / 12)
-
     const [selectedStyle, setSelectedStyle] = useState<colorStyleWatch>(styleWatch);
+
 
     const styleLineSecond = { transform: `rotate(${calculatedSecond}deg)`};
     const styleLineMinute = {transform: `rotate(${calculatedMinute}deg)`};
@@ -48,8 +48,8 @@ export const ClassicWatch: React.FC<PropsTypeWatch> = ({hour,
                     <MenuItem value={colorStyleWatch.FullMoon}>Full Moon</MenuItem>
                 </Select>
             </div>
-            <div className={`${s[selectedStyle]}`}>
-                <div className={s.point}></div>
+            <div className={`${s[selectedStyle]} ${s.commonStyles}`}>
+
                 <div className={`${s.numberClock_1} ${s.number_className}`}>1</div>
                 <div className={`${s.numberClock_2} ${s.number_className}`}>2</div>
                 <div className={`${s.numberClock_3} ${s.number_className}`}>3</div>
@@ -63,6 +63,8 @@ export const ClassicWatch: React.FC<PropsTypeWatch> = ({hour,
                 <div className={`${s.numberClock_11} ${s.number_className}`}>11</div>
                 <div className={`${s.numberClock_12} ${s.number_className}`}>12</div>
 
+                <div className={s.containerLines}>
+                    <div className={s.point}></div>
                 <div className={s.boxLineHour} style={styleLineHour}>
                     <div className={ s.lineHour}></div>
                 </div>
@@ -73,6 +75,7 @@ export const ClassicWatch: React.FC<PropsTypeWatch> = ({hour,
 
                 <div className={s.boxLineSecond} style={styleLineSecond}>
                     <div className={s.lineSecond}></div>
+                </div>
                 </div>
             </div>
         </div>
