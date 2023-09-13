@@ -15,17 +15,55 @@
     background-color: #120458;
 }
 
+ /*Styles Sunrise*/
 .sunrise{
     --rotation: 0;
     transform: rotate(var(--rotation));
     box-shadow: 10px 0px 50px 10px #fad8d0, 0  0 25px 25px #f64c0a;
     background-color: #ffca1f;
 }
+.sunrise .point{
+    background-color: #fff69f;
+}
+.sunrise .lineHour{
+    /*background-color: #a15501;*/
+    background-color: #fff69f;
+}
+.sunrise .lineMinute{
+    background-color: #fff69f;
+}
+.sunrise .number_className{
+    color: #351409;
+    font-family: Libre Baskerville;
+}
+.sunrise .lineSecond{
+    background-color: #333333;
+}
 
+/*Styles fullMoon*/
 .fullMoon{
     box-shadow: 10px 0px 50px 10px #a4e1ff, 0  0 25px 25px #a4e4ff;
     background-color: #e0e8ff;
 }
+
+.fullMoon .number_className{
+    font-family: Dancing Script;
+    color: #3d898d;
+}
+.fullMoon .point{
+    background-color: #2f404d;
+}
+.fullMoon .lineHour{
+    /*background-color: #a15501;*/
+    background-color: #2f404d;
+}
+.fullMoon .lineMinute{
+    background-color: #2f404d;
+}
+.fullMoon .lineSecond{
+    background-color: #85ebd9;
+}
+
 
 .commonStyles {
     width: 500px;
@@ -34,13 +72,13 @@
     position: relative;
 }
 
+/*Clock face*/
 .boxLineHour{
     height: 300px;
     position: absolute;
     top: 103px;
     left: 252px;
 }
-
 .lineHour{
     width: 7px;
     height: 150px;
@@ -60,7 +98,6 @@
     background-color:  #ff00a0;;
     border-radius: 90px;
 }
-
 .boxLineSecond{
     height: 210px;
     position: absolute;
@@ -72,7 +109,6 @@
     height: 50%;
     background-color: #ff124F;
 }
-
 .point {
     width: 20px;
     height: 20px;
@@ -82,9 +118,6 @@
     top: 245px;
     left: 245px;
 }
-
-
-
 .number_className {
     color: #fe75fe;
     font-size: 30px;
@@ -200,24 +233,23 @@
     }
 
     .boxLineHour{
-        height: 290px;
+        height: 250px;
         position: absolute;
-        top: 130px;
-        left: 270px;
+        top: 135px;
+        left: 258px;
     }
     .lineHour{
         width: 6px;
         height: 120px;
         background-color:  #ff00a0;;
         border-radius: 90px;
-
     }
 
     .boxLineMinute {
         height: 250px;
         position: absolute;
         top: 130px;
-        left: 255px;
+        left: 250px;
     }
 
     .lineMinute {
