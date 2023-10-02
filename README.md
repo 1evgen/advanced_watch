@@ -1,8 +1,8 @@
-<br>_And our time is running out_</br>
-<br>_You can't push it underground_</br>
-<br>_You can't stop it screaming out_</br>
-<br>_How did it come to this?_</br>
-<br>_ Muse_</br>
+<br> _"And our time is running out"_</br>
+<br> _"You can't push it underground"_</br>
+<br> _"You can't stop it screaming out"_</br>
+<br> _"How did it come to this?"_</br>
+         <br>_- Muse -_</br>
 
 
 <img src="Dali.png" alt="Steve" width="90" height="70">
