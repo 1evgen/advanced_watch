@@ -4,6 +4,9 @@
 <br>_How did it come to this?_</br>
 <br>_ Muse_</br>
 
+
+<img src="Dali.png" alt="Steve" width="90" height="70">
+
 # Interactive Clock
 
 ![Project Demo](Clock.gif)
