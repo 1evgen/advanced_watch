@@ -1,46 +1,45 @@
-# Getting Started with Create React App
+<br>_And our time is running out_</br>
+<br>_You can't push it underground_</br>
+<br>_You can't stop it screaming out_</br>
+<br>_How did it come to this?_</br>
+<br>_ Muse_</br>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Interactive Clock
 
-## Available Scripts
+![Project Demo](Clock.gif)
 
-In the project directory, you can run:
+## Description
+The "Interactive Clock" project is an interactive virtual clock that allows you to track time in styles such as "Solar Eclipse," "Lunar Eclipse," and "Full Moon." It also includes an option to switch to regular digital clocks.
 
-### `yarn start`
+In digital clock mode, you can select the time for cities such as New York, London, Tokyo, and track the time in your time zone. The selected time is highlighted for clarity.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Project Goal
+The main goal of this educational project was to work with Data objects and create a complex clock face with a hand that always corresponds to the current time. The project also aimed to develop a unique cyberpunk style, including interesting fonts, stylization, and shadows.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Tools and Technologies
 
-### `yarn test`
+<p align="left"> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/><a href="https://storybook.js.org/" target="_blank" rel="noreferrer">  <img src= "https://cdn.jsdelivr.net/gh/storybookjs/brand@main/badge/badge-storybook.svg" alt="storybook",  width="100" height="40"/> </a>
+</a> </p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+The project was implemented using the following tools and technologies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **React**: The React library was used to create the project's interface and components.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Storybook**: The project integrated the Storybook tool for documenting and testing components, which allowed for more efficient work with the interface and interaction with individual components.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **HTML and CSS**: HTML and CSS were used to create the unique clock face design and styles. Special attention was paid to details such as shadows and fonts.
 
-### `yarn eject`
+- **Moment.js**: The Moment.js library was used to implement switching between different time zones and correct time handling.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- **Material-UI (MUI)**: The Material-UI library was integrated to create switches and interface elements for the project.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The project was designed so that the App component acted as a controller and delegated logic to other components. The Clock component was created to work with time and was then divided into two child components for ease of control and functionality extension.    
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+To install and run the project locally, follow these steps:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Clone the repository to your computer.
+2. In the terminal, navigate to the project folder.
+3. Install dependencies using the following command:
+4. Start the project with the command: yarn start
+5. The deployed project can be found at the following link: ...                                                                           
