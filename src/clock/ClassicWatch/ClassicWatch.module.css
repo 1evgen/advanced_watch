@@ -4,10 +4,10 @@
 
 .select {
     position: fixed;
-    top: 20px; /* Расстояние сверху */
-    right: 20px; /* Расстояние справа */
+    top: 20px;
+    right: 20px;
     color: #5d94ff;
-    z-index: 100; /* Значение z-index для признака, чтобы селектор отображался поверх остальных элементов */
+    z-index: 100;
 }
 
 .moonEclipse {
@@ -71,6 +71,7 @@
     border-radius: 100%;
     position: relative;
 }
+
 
 /*Clock face*/
 .boxLineHour{
@@ -231,9 +232,9 @@
         top: -105px;
         right: 400px
     }
-
+    /*boxLineHour heigh 230*/
     .boxLineHour{
-        height: 250px;
+        height: 230px;
         position: absolute;
         top: 135px;
         left: 258px;

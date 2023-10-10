@@ -68,11 +68,9 @@ export const ClassicWatch: React.FC<PropsTypeWatch> = ({hour,
                 <div className={s.boxLineHour} style={styleLineHour}>
                     <div className={ s.lineHour}></div>
                 </div>
-
                 <div className={s.boxLineMinute} style={styleLineMinute}>
                     <div className={s.lineMinute} ></div>
                 </div>
-
                 <div className={s.boxLineSecond} style={styleLineSecond}>
                     <div className={s.lineSecond}></div>
                 </div>
