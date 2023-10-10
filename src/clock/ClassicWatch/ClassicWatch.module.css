@@ -77,8 +77,11 @@
 .boxLineHour{
     height: 300px;
     position: absolute;
-    top: 103px;
-    left: 252px;
+    /*top: 103px;*/
+    /*left: 252px;*/
+    top: 50%;
+    left: 50%;
+    transform-origin: 10% top;
 }
 .lineHour{
     width: 7px;
@@ -90,8 +93,11 @@
 .boxLineMinute {
     height: 300px;
     position: absolute;
-    top: 105px;
-    left: 255px;
+    /*top: 105px;*/
+    /*left: 255px;*/
+    top: 50%;
+    left: 50%;
+    transform-origin: 10% top;
 }
 .lineMinute {
     width: 3px;
@@ -102,8 +108,11 @@
 .boxLineSecond{
     height: 210px;
     position: absolute;
-    top: 150px;
-    left: 255px;
+    /*top: 150px;*/
+    /*left: 255px;*/
+    top: 50%;
+    left: 50%;
+    transform-origin: 10% top;
 }
 .lineSecond{
     width: 2px;
@@ -116,8 +125,9 @@
     border-radius: 50%;
     background-color:  #ff00a0;
     position: absolute;
-    top: 245px;
-    left: 245px;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%) ;
 }
 .number_className {
     color: #fe75fe;
@@ -227,17 +237,13 @@
         top: 20px;
         left: 75px;
     }
-    .containerLines{
-        position: absolute;
-        top: -105px;
-        right: 400px
-    }
-    /*boxLineHour heigh 230*/
+
     .boxLineHour{
         height: 230px;
         position: absolute;
-        top: 135px;
-        left: 258px;
+        top: 50%;
+        left: 50%;
+        transform-origin: 10% top;
     }
     .lineHour{
         width: 6px;
@@ -249,8 +255,9 @@
     .boxLineMinute {
         height: 250px;
         position: absolute;
-        top: 130px;
-        left: 250px;
+        top: 50%;
+        left: 50%;
+        transform-origin: 10% top;
     }
 
     .lineMinute {
@@ -260,13 +267,21 @@
         border-radius: 90px;
     }
 
-    .point {
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        background-color: #ff00a0;
+    .boxLineSecond{
+        height: 210px;
         position: absolute;
-        top: 245px;
-        left: 245px;
+        top: 50%;
+        left: 50%;
+        transform-origin: 10% top;
     }
+
+    /*.point {*/
+    /*    width: 20px;*/
+    /*    height: 20px;*/
+    /*    border-radius: 50%;*/
+    /*    background-color: #ff00a0;*/
+    /*    position: absolute;*/
+    /*    top: 245px;*/
+    /*    left: 245px;*/
+    /*}*/
 }

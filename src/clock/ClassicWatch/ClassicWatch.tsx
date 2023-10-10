@@ -27,10 +27,9 @@ export const ClassicWatch: React.FC<PropsTypeWatch> = ({hour,
     const [selectedStyle, setSelectedStyle] = useState<colorStyleWatch>(styleWatch);
 
 
-    const styleLineSecond = { transform: `rotate(${calculatedSecond}deg)`};
-    const styleLineMinute = {transform: `rotate(${calculatedMinute}deg)`};
-    const styleLineHour = {transform: `rotate(${calculatedHour}deg)`};
-
+    const styleLineSecond = { transform: `rotate(${calculatedSecond}deg) translate(-50%, -50%)`};
+    const styleLineMinute = {transform: `rotate(${calculatedMinute}deg) translate(-50%, -50%)`};
+    const styleLineHour = {transform: `rotate(${calculatedHour}deg) translate(-50%, -50%)`};
     const handleChangeStyle = (event: SelectChangeEvent) => {
         setSelectedStyle(event.target.value as colorStyleWatch);
     };
