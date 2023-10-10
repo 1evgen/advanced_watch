@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/advanced_watch/static/css/main.12314bba.css",
+    "main.js": "/advanced_watch/static/js/main.353a66c9.js",
+    "static/js/787.28cb0dcd.chunk.js": "/advanced_watch/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/advanced_watch/index.html",
+    "main.12314bba.css.map": "/advanced_watch/static/css/main.12314bba.css.map",
+    "main.353a66c9.js.map": "/advanced_watch/static/js/main.353a66c9.js.map",
+    "787.28cb0dcd.chunk.js.map": "/advanced_watch/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.12314bba.css",
+    "static/js/main.353a66c9.js"
+  ]
+}
